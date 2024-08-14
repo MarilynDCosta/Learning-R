@@ -18,3 +18,18 @@ fibonacci <- function(number){
 }
 
 fibonacci(10)
+
+#another popular function that can be done using recursion is triangle numbers
+
+triangle <- function(number){
+  if(number>=0){
+    result <- number + triangle(number-1)
+    return(result)
+    }
+  else {
+    result = 0
+    return(result)
+  }
+}
+
+triangle(4)
