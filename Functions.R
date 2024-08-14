@@ -48,7 +48,7 @@ id_check <- function(){
     return(FALSE)
   } else{
     print(cat("Invalid input: please type either \"yes\" or \"no\". "))
-    id_check()
+    id_check() # an example of recursion as you are calling the function within itself until you get a valid output
   }
 }
 
