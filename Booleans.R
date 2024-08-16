@@ -9,7 +9,7 @@
 a <- 6
 b <- 5
 a > b
-
+ 
 # Booleans are very useful in if statements
 if (a>b){
   "a is greater than b"
