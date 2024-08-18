@@ -1,7 +1,7 @@
 # Variables created outside of a function are global variables.
 # Global variables can be used both inside and outside of functions.
 
-txt <- "Hello"
+txt <- "Hello" 
 
 greeting <- function(object = "World!"){
   paste(txt, object)
