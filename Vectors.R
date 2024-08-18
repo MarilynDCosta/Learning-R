@@ -58,7 +58,7 @@ decimals[c(1,2)] <- c(7.5, 9.5) # the first two elements are now 7.5 and 9.5 ins
 decimals
 
 # To repeat vectors use rep().
-# Repeat involves the elements of the vector being repeat a number of time before the next element is repeated.
+# rep() involves the elements of the vector being repeated a number of times before the next element is repeated.
 
 repeat_integers <- rep(integers, each=3)
 repeat_integers
