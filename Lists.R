@@ -51,8 +51,7 @@ for(x in countries){print(x)}
 
 # To concaternate lists together, use c() function.
 
-countries <- unlist(countries)
-removed_countries <- c("Albania","Ethiopia","Finland", "Greece")
+removed_countries <- list("Albania","Ethiopia","Finland", "Greece")
 countries <- c(countries, removed_countries)
-countries <- sort(countries)
+countries <- sort(unlist(countries)) # To order a list, you need to use unlist() to convert the list into a vector. 
 countries
