@@ -38,3 +38,5 @@ countries_matrix
 
 countries_matrix <- rbind(countries_matrix, c("Japan","Kenya","Libya","Morocco"))
 countries_matrix
+
+# To remove columns and rows in a matrix you can use the c() function.
