@@ -40,3 +40,20 @@ countries_matrix <- rbind(countries_matrix, c("Japan","Kenya","Libya","Morocco")
 countries_matrix
 
 # To remove columns and rows in a matrix you can use the c() function.
+
+countries_matrix <- countries_matrix[-c(4), c(-4)] #NOTE: the negative sign can be place either before the c() function or within in the c() function.
+countries_matrix
+
+# Use %in% operator to find out if an item is present in a matrix.
+
+if("Hungary" %in% countries_matrix){print("I am HUNGARY for Hungarian food.")}
+
+# Use dim() to find the number of rows and columns are in a matrix.
+# Note: the number of rows is the first number and the number of columns is the second number.
+
+dim(numbers_matrix)
+
+# Use length() to find the total number of elements in a matrix
+
+length(countries_matrix) # as there are 3 columns and 3 rows, there should be 9 elements.
+
