@@ -5,6 +5,7 @@
 # - Arithmetric (e.g.: +, -, *, /, ^ %% (modulus), %/% (integer division))
 
 # - Assignment (e.g.: <-, <<-, ->, ->>)
+# NOTE: <<- and ->> are global variable assignment operators.
 
 # - Comparison (e.g.: ==, !=, >, <, >=, <=)
 
