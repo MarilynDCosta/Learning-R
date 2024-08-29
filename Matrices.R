@@ -57,3 +57,22 @@ dim(numbers_matrix)
 
 length(countries_matrix) # as there are 3 columns and 3 rows, there should be 9 elements.
 
+# You can loop through a matrix using a for loop.
+# Let's say we want to loop countries_matrix and find if Finland is there so we can say that the capital of Finland is Helsinki.
+
+Finland_Found <- FALSE
+
+for(rows in 1:nrow(countries_matrix)){
+  for(columns in 1:ncol(countries_matrix)){
+    if(countries_matrix[rows, columns] == "Finland"){
+      print(paste("Found Finland; its capital is Helsinki. Loop ends."))
+      Finland_Found <- TRUE
+      break
+    }
+    else{
+      print(paste("Finland not found."))
+    }
+  }
+  if(Finland_Found){break}
+}
+
