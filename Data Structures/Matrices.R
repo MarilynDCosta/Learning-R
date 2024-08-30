@@ -76,3 +76,16 @@ for(rows in 1:nrow(countries_matrix)){
   if(Finland_Found){break}
 }
 
+# To combine matrices together, you can use either cbind() or rbind().
+# Note: These matrices must be the same size as each other
+# You can use t() to transpose a matrix which can sometimes help matrices to combine.
+# - Say we have two matrices (A and B)...
+# - t() works when these two conditions are met:
+# - - ncolA = nrowB
+# - - nrowA = ncolB
+
+Matrix1 <- rbind(t(colours_matrix), numbers_matrix)
+Matrix1
+
+Matrix2 <- cbind(colours_matrix, t(numbers_matrix))
+Matrix2
