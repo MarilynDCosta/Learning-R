@@ -30,3 +30,23 @@ colours[4,2,1] # "brown"
 
 mixed_data_types[2,1,2] # results in 2 (with the integer data type)
 
+count_to_100[,c(2,5),1] #displays the 2nd and 5th columns of matrix 1 of count_to_100
+
+colours[c(1,3),,c(-2)] # displays the 1st and 5th rows of all th matrices but the 2nd matrix of colours
+
+mixed_data_types[1,,c(2,3)] # prints first row of the 2nd and 3rd matrices in mixed_data_types
+
+
+# To check if an item exists in an array, use the %in% operator.
+
+if("brown" %in% colours && "blue" %in% colours && "violet" %in% colours){print("I can be brown, I can blue, I can be violet sky!")}
+
+
+# Use dim() to find out the amount of rows, columns and matrices are in an array.
+
+dim(count_to_100) # results in 2 (number of rows), 5 (number of columns) and 10 (number of matrices)
+
+
+# To find the number of elements in an array use length().
+
+length(mixed_data_types) #displays 12 as 2x2x3=12
