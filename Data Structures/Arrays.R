@@ -50,3 +50,10 @@ dim(count_to_100) # results in 2 (number of rows), 5 (number of columns) and 10 
 # To find the number of elements in an array use length().
 
 length(mixed_data_types) #displays 12 as 2x2x3=12
+
+
+# You can loop through arrays by using a for loop.
+
+for(i in colours){
+  print(i)
+}
