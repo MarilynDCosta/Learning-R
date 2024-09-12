@@ -13,3 +13,9 @@ Person_Info
 # Use summary() to summarise data in a data frame.
 
 summary(Person_Info)
+
+# Use [], [[]] or $ to access columns in a data frame.
+
+Person_Info[1]
+Person_Info[["Name"]]
+Person_Info$Name
