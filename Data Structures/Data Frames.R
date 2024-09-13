@@ -19,3 +19,13 @@ summary(Person_Info)
 Person_Info[1]
 Person_Info[["Name"]]
 Person_Info$Name
+
+# To add rows to a data frame, use rbind().
+
+Person_Info <- rbind(Person_Info, c("Philomena", 48, 170))
+Person_Info
+
+# To add columns to a data frame, use cbind().
+
+Person_Info <- cbind(Person_Info, Weight = c(54, 82, 63, 65))
+Person_Info
