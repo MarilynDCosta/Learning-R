@@ -29,3 +29,18 @@ Person_Info
 
 Person_Info <- cbind(Person_Info, Weight = c(54, 82, 63, 65))
 Person_Info
+
+# Use c() to remove rows and columns in a data frame.
+
+Person_Info <- Person_Info[-c(3),c(-4)] # Removes third row and fourth column of Person_Info
+Person_Info
+
+# Use dim() to find the number of rows and columns in a data frame.
+
+dim(Person_Info)
+
+# Alternatively you can use nrow() and ncol() to find out only the number of rows and only the number of columns respectively.
+# You can also use ncol() and nrow() for matrices and arrays as well.
+
+nrow(Person_Info)
+ncol(Person_Info)
