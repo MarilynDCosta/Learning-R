@@ -44,3 +44,31 @@ dim(Person_Info)
 
 nrow(Person_Info)
 ncol(Person_Info)
+
+# Another way to find the number of columns in a data frame is using length().
+
+length(Person_Info)
+
+# Use cbind() to combine data frames horizontally.
+# Use rbind() to combine data frames vertically.
+
+Health_Info <- data.frame(
+  Weight = c(54, 82, 65), # The amount of values in c() must equal the number of rows
+  Blood_Type = c("A", "B", "O"),
+  Allergies = c(FALSE, FALSE, TRUE)
+)
+
+Person_Info <- cbind(Person_Info, Health_Info)
+Person_Info
+
+More_People <- data.frame(
+  Name = c("Jane", "Phillip", "Colin"), # The arrays within this data_frame must correspond with the arrays in the data frame we are linking it to.
+  Age = c(29, 54, 38),
+  Height = c(162, 170, 176),
+  Weight = c(54, 62, 74),
+  Blood_Type = c("AB", "A", "O"),
+  Allergies = c(TRUE, FALSE, TRUE)
+)
+
+Person_Info <- rbind(Person_Info, More_People)
+Person_Info
