@@ -9,7 +9,7 @@ film_genre
 
 levels(film_genre)
 
-# Instead of using levels(), you ould add a levels argument to factor().
+# Instead of using levels(), you would add a levels argument to factor().
 # This is useful when you have data that does not have all the categories in it as you have more types of categories than the number of categories within the data.
 
 film_genre <- factor(c("Romance", "Comedy", "Drama", "Thriller", "Horror", "Mystery", "Musical", "Musical", "Crime", "Drama", "Romance"),
@@ -36,6 +36,14 @@ film_genre[c(-1,-3)] # Shows all data items but the 1st and 3rd items.
 # To change the value of a data item, refer to the index number.
 # However, make sure that the value you are changing it to is already a level.
 
-film_genre[1] <- "Other"
+film_genre[c(1)] <- "Other" # Changes first data item to "Other"
+
+film_genre
+
+film_genre[c(10,11)] <- "Biopic" # Changes 10th and 11th items to "Biopic"
+
+film_genre
+
+film_genre[-1:-3] <- "Romance" # Changes all data items to "Romance apart from the first three
 
 film_genre
