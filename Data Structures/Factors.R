@@ -32,3 +32,10 @@ film_genre[1:3] # Shows first 3 data items
 film_genre[c(1,2,5)] # Shows 1st, 2nd and 5th data items
 
 film_genre[c(-1,-3)] # Shows all data items but the 1st and 3rd items.
+
+# To change the value of a data item, refer to the index number.
+# However, make sure that the value you are changing it to is already a level.
+
+film_genre[1] <- "Other"
+
+film_genre
