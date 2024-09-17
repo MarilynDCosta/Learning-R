@@ -5,7 +5,7 @@ film_genre <- factor(c("Romance", "Comedy", "Drama", "Thriller", "Horror", "Myst
 
 film_genre
 
-# To only preint the levels, use the levels() function.
+# To only print the levels, use the levels() function.
 
 levels(film_genre)
 
@@ -44,6 +44,6 @@ film_genre[c(10,11)] <- "Biopic" # Changes 10th and 11th items to "Biopic"
 
 film_genre
 
-film_genre[-1:-3] <- "Romance" # Changes all data items to "Romance apart from the first three
+film_genre[-(1:3)] <- "Romance" # Changes all data items to "Romance apart from the first three
 
 film_genre
