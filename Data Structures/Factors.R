@@ -40,7 +40,7 @@ film_genre[c(1)] <- "Other" # Changes first data item to "Other"
 
 film_genre
 
-film_genre[c(10,11)] <- "Biopic" # Changes 10th and 11th items to "Biopic"
+film_genre[c(10,11)] <- "Biopic" # Changes 10th and 11th data items to "Biopic"
 
 film_genre
 
