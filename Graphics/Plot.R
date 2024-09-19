@@ -25,4 +25,5 @@ plot(1:10)
 
 # To draw a line, you can use the type parameter with the value "l".
 
+
 plot(1:10, type = "l")
