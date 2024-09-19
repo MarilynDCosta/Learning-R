@@ -25,5 +25,25 @@ plot(1:10)
 
 # To draw a line, you can use the type parameter with the value "l".
 
-
 plot(1:10, type = "l")
+
+# plot() also accepts parameters such as main, xlab and ylab.
+# These parameters help you o customise your graph and axes titles.
+# - main corresponds to the graph title
+# - xlab corresponds to the x-axis title
+# - ylab corresponds to the y-axis title
+
+plot(1:50, main="y=x", xlab="x", ylab="y")
+
+# To add colour, use col
+
+plot(1:50, main="y=x", xlab="x", ylab="y", col="red")
+
+# Use cex, to change the size of the points
+
+plot(1:50, main="y=x", xlab="x", ylab="y", col="red", cex=0.5)
+
+# Use pch to change the change the shape of the points
+# The value of pch must have a value between 0 to 25
+
+plot(1:50, main="y=x", xlab="x", ylab="y", col="red", cex=0.5, pch=13)
