@@ -18,7 +18,7 @@ plot(1:20, type="l", col="red", lwd=2, lty=2)
 
 # To display multiple lines in a graph, use the plot() function along with the lines() function.
 
-# To easily display lines that follow a mathematical formula, define your range of x-values and create variables for each line by setting them as the formula.
+# To easily display lines that follow a mathematical formula, define your range of x-values and create variables for each formula.
 
 x <- seq(-10, 10, by=0.1)
 
@@ -26,8 +26,8 @@ y1 <- x
 y2 <- x^2
 y3 <- x^3
 
-plot(x,y1, type="l", col="red", lwd=2, xlab="x", ylab="y")
+plot(x,y1, type="l", col="red", lwd=2, xlab="x", ylab="y", main="Graph of y=x, y=x^2 amd y=x^3")
 
-lines(x, y2, type="l", col="blue", lwd=2, xlab="x", ylab="y")
+lines(x, y2, type="l", col="blue", lwd=2, xlab="x", ylab="y", main="Graph of y=x, y=x^2 amd y=x^3")
 
-lines(x, y3, type="l", col="darkgreen", lwd=2, xlab="x", ylab="y")
+lines(x, y3, type="l", col="darkgreen", lwd=2, xlab="x", ylab="y", main="Graph of y=x, y=x^2 amd y=x^3")
